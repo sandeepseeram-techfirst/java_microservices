@@ -1,0 +1,12 @@
+apiVersion: monitoring.rhobs/v1alpha1
+kind: MonitoringStack
+metadata:
+  name: sample-monitoring-stack
+  labels:
+    app: monitor
+spec:
+  logLevel: info 
+  retention: 1d
+  resourceSelector:
+    matchLabels:
+      app: monitor

@@ -1,0 +1,25 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    app.quarkus.io/build-timestamp: 2023-06-30 - 12:45:38 +0000
+    prometheus.io/scrape: "true"
+    prometheus.io/path: /metrics
+    prometheus.io/port: "8080"
+    prometheus.io/scheme: http
+  labels:
+    app: monitor
+    app.kubernetes.io/name: quarkus-monitor
+  name: quarkus-monitor
+spec:
+  ports:
+    - name: http
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: monitor
+    app.kubernetes.io/name: quarkus-monitor
+  type: ClusterIP
+---

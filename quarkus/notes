@@ -1,2 +1,10 @@
 generate bootstrap code - https://code.quarkus.io/ 
 RESTEasy Reactive, Container Image Jib, and Micrometer Registry Prometheus. 
+
+Metrics Endpoint: 
+
+By default, Quarkus maps the extra endpoints, like the metrics one, to the /q subpath, so to get the metrics, you should query the /q/metrics endpoint. 
+
+Because Prometheus expects the metrics published in /metrics by default
+
+quarkus.http.non-application-root-path=/

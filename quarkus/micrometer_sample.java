@@ -4,7 +4,7 @@ import jakarta.ws.rs.PathParam;
 
 // This is the main Micrometer class to register custom metrics
     private final MeterRegistry registry;
-    // The data to monitor
+    // The data to monitor 
     private AtomicInteger currentMemory;
     // Injects the Micrometer registry
     GreetingResource(MeterRegistry registry) {

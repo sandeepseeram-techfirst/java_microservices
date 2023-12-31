@@ -1,0 +1,12 @@
+apiVersion: monitoring.rhobs/v1
+kind: ServiceMonitor
+metadata:
+  name: quarkus-monitor
+  labels:
+    app: monitor
+spec:
+  selector:
+    matchLabels:
+      app: monitor
+  endpoints:
+  - port: http

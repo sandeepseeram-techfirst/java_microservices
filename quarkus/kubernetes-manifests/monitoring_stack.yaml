@@ -1,6 +1,6 @@
 apiVersion: monitoring.rhobs/v1alpha1
 kind: MonitoringStack
-metadata: 
+metadata:
   name: sample-monitoring-stack
   labels:
     app: monitor

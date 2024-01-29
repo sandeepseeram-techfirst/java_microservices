@@ -7,4 +7,4 @@ By default, Quarkus maps the extra endpoints, like the metrics one, to the /q su
 
 Because Prometheus expects the metrics published in /metrics by default
 
-quarkus.http.non-application-root-path=/
+quarkus.http.non-application-root-path=/ 

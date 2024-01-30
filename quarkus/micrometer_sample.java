@@ -1,6 +1,6 @@
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Tags;
-import jakarta.ws.rs.PathParam; 
+import jakarta.ws.rs.PathParam;
 
 // This is the main Micrometer class to register custom metrics
     private final MeterRegistry registry;

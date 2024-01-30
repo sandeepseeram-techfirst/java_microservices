@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:
+metadata: 
   annotations:
     app.quarkus.io/build-timestamp: 2023-06-30 - 12:45:38 +0000
     prometheus.io/scrape: "true"

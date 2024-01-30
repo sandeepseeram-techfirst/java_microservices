@@ -1,6 +1,6 @@
 apiVersion: monitoring.rhobs/v1
 kind: ServiceMonitor
-metadata:
+metadata: 
   name: quarkus-monitor
   labels:
     app: monitor
